@@ -34,8 +34,10 @@ html {
    $white: #fff;
 
    @mixin section-header{
+    position: relative;
+    top: 140px;
     width: 61%;
-    margin: 140px auto;
+    margin: 0 auto;
     text-align: center;
    }
 
@@ -50,15 +52,13 @@ html {
    }
    ul{
     list-style-type: none;
-    margin:{
-      right: 200px;
-      top: 60px;
-    }
-    color: $white;
+    padding: 0;
    }
    li{
     display: inline-block;
-    padding-left: 60px;
+   }
+   img{
+    max-width: 100%;
    }
 
 /* ==========================================================================
@@ -76,23 +76,101 @@ html {
     top: 60px;
   }
 }
+.navigation{
+  margin:{
+    right: 200px;
+    top: 60px;
+  }
+  color: $white;
+  li{
+    display: inline-block;
+    padding-left: 60px;
+  }
+}
+.section-header{
+  @include section-header;
+  button{
+    width: 300px;
+    height: 75px;
+    background-color: #eb7d4b;
+    border-color: #c86a40;
+    color: $white;
+  }
+  hr{
+    width: 100px;
+    border-color: $white;
+  }
+}
+
 .purple{
   background-color: #87509c;
   height: 600px;
-  border: 1px solid;
-}
-
-.section-header{
-  @include section-header;
-    button{
-      width: 300px;
-      height: 75px;
-      background-color: #eb7d4b;
-      border-color: #c86a40;
-      color: $white;
-    }
+  color: $white;
   h1{
    text-align: center;
    color: $white;
+   margin:{
+    top:0;
+    }
   }
 }
+
+.teal{
+  background-color: #17c2a4;
+  height: 750px;
+  color: $white;
+  h1{
+     text-align: center;
+     color: $white;
+     margin:{
+      top:0;
+    }
+  }
+}
+
+.grey{
+  background-color: #e7f1f8;
+  height: 915px;
+  color: #3c4761;
+  h1{
+     text-align: center;
+     color: #3c4761;
+     margin:{
+      top:0;
+    }
+  } 
+}
+
+.content-wrapper{
+  width: 1110px;
+  margin: 220px auto;
+}
+
+.content-block{
+  display: inline-block;
+  margin: 0 35px;
+  text-align: center;
+  p{
+    width: 200px;
+    font-size: 1.125em;
+  }
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  background-color: #878787;
+  border-radius: 50%;
+}
+
+.job-title{
+  color: #48c1e9;
+}
+
+.social-icons{
+  margin: 0 auto;
+  li{
+    padding: 5px;
+  }
+}
+
