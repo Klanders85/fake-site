@@ -1,4 +1,6 @@
-fake-site
-=========
+just_rename
+===========
 
-Fictional site for portfolio
+BoilerPlate &amp; Sass pre-build
+
+SEE README.txt for all the deets
