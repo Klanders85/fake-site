@@ -141,6 +141,18 @@ html {
   } 
 }
 
+.white{
+  height: 660px;
+  color: #3c4761;
+  h1{
+     text-align: center;
+     color: #3c4761;
+     margin:{
+      top:0;
+    }
+  }
+}
+
 .content-wrapper{
   width: 1110px;
   margin: 220px auto;
@@ -172,5 +184,30 @@ html {
   li{
     padding: 5px;
   }
+}
+
+.skill-set{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  position: relative;
+  span{
+    font-size: 3.125em;
+    position: relative;
+    top: 45px;
+  }
+}
+
+.web-design{
+  border: 15px solid #30bae7; 
+}
+.html{
+  border: 15px solid #d74680; 
+}
+.graphic-design{
+ border: 15px solid #15c7a8;  
+}
+.ui{
+  border: 15px solid #eb7d4b;
 }
 
