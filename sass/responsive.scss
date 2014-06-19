@@ -1,5 +1,66 @@
+/*Phone*/
+@media only screen and (min-width: 320px) and (max-width: 600px){
+	
+	.hide{
+		display: none;
+	}
+	.logo{
+		margin-left: 0;
+	}
+	.section-header{
+		width: 90%;
+		top: 40px;
+	}
+	.purple{
+		height: 500px;
+		text-align: center;
+		button{
+			width: 100%;
+		}
+	}
+	.teal, .grey, .white{
+		height: 100%;
+		button{
+			width: 100%;
+		}
+	}
+	.project-filter{
+		width: 300px;
+		text-align: center;
+		margin: 100px auto;
+	}
+	.job{
+		margin: 10px;
+	}
+	.content-wrapper{
+		margin: 0 auto;
+	}
+	.content-block{
+		margin: 30px 0 10px 10px;
+	}
+	.laptop-images{
+		margin-top: -80px;
+	}
+	.nameEmail{
+		width: 300px;
+		margin: 10px auto;
+	}
+	.message{
+		width: 300px;
+		margin: 10px auto;
+	}
+	.blue{
+		p{
+			margin-bottom: 40px;
+		}
+	}
+	.footer-wrapper li{
+		padding: 11px;
+	}
+}
+
 /*Tablet*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
    .hide{
   display: none;
 }
@@ -22,5 +83,13 @@
    .white{
    		height: 950px;
    }
-
+   .nameEmail{
+   	margin-bottom: 10px;
+   }
+   .message{
+   		width: 500px;
+   }
+   .footer-wrapper li{
+   	padding: 10px;
+   }
 }
