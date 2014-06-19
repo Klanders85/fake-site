@@ -9,9 +9,10 @@
         <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     </head>
-    <body data-spy="scroll" data-target=".navbar">
+    <body data-spy="scroll" data-target="nav">
         <div class="container">
             <section>
                 <div class="panel purple navbar" id="purple">
@@ -23,6 +24,7 @@
                             <li class="nav-item"><a href="#grey">TEAM</a></li>
                             <li class="nav-item"><a href="#tan">PORT.</a></li>
                             <li class="nav-item"><a href="#pink">TESTIMONIALS</a></li>
+                            <li class="nav-item"><a href="#blue">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div class="section-header">
@@ -242,7 +244,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel blue">
+                <div class="panel blue" id="blue">
                     <div class="section-header">
                         <h1>GET IN TOUCH</h1>
                         <span><hr></span>
@@ -275,6 +277,11 @@
             </section>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" scr="js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('body').scrollspy({ target: '.navbar' })
+        });
+        </script>
     </body>
 </html>

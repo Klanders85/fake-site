@@ -76,8 +76,9 @@ html {
   position: fixed;
   right: 50px;
   top: 0;
+  font-size: 0.625em;
   margin:{
-    right: 200px;
+    right: 0px;
     top: 60px;
   }
   color: $white;
@@ -90,9 +91,12 @@ html {
       }
   }
 }
-.nav-item.active > a{
-  background-color: red;
-                          
+.nav-item.active > a,
+.nav-item.active > a:hover,
+.nav-item.active > a:focus{
+  background-color: grey;
+  padding: 5px;
+  border-radius: 5px;                          
 }
 .section-header{
   @include section-header;
@@ -110,8 +114,8 @@ html {
 }
 
 .purple{
-  background-color: #87509c;
   height: 600px;
+  background-color: #87509c;
   color: $white;
   h1{
    text-align: center;
@@ -124,7 +128,6 @@ html {
 
 .teal{
   background-color: #17c2a4;
-  height: 750px;
   color: $white;
   h1{
      text-align: center;
@@ -137,7 +140,6 @@ html {
 
 .grey{
   background-color: #e7f1f8;
-  height: 915px;
   color: #3c4761;
   h1{
      text-align: center;
@@ -149,7 +151,6 @@ html {
 }
 
 .white{
-  height: 660px;
   color: #3c4761;
   h1{
      text-align: center;
@@ -171,7 +172,6 @@ html {
   }
 }
 .pink{
-  height: 900px;
   background-color: #d74680;
   color: $white;
   h1{
@@ -184,7 +184,6 @@ html {
 }
 
 .blue{
-  height: 825px;
   background-color: #3c5499;
   color: $white;
   h1{
@@ -197,7 +196,7 @@ html {
 }
 
 .content-wrapper{
-  width: 1110px;
+  max-width: 1110px;
   margin: 200px auto 0;
   text-align: center;
   button{
