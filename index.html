@@ -10,18 +10,18 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar">
         <div class="container">
             <section>
-                <div class="panel purple">
-                    <img src="img/logo.png" class="logo">
+                <div class="panel purple navbar" id="purple">
+                    <a href="#home"><img src="img/logo.png" class="logo"></a>
                     <nav>
-                        <ul class="navigation">
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>WORK</li>
-                            <li>BLOG</li>
-                            <li>CONTACT</li>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#purple">HOMEBASE</a></li>
+                            <li class="nav-item"><a href="#teal">SERVICES</a></li>
+                            <li class="nav-item"><a href="#grey">TEAM</a></li>
+                            <li class="nav-item"><a href="#tan">PORT.</a></li>
+                            <li class="nav-item"><a href="#pink">TESTIMONIALS</a></li>
                         </ul>
                     </nav>
                     <div class="section-header">
@@ -31,7 +31,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel teal">
+                <div class="panel teal" id="teal">
                     <div class="section-header">
                         <h1>SERVICES WE PROVIDE</h1>
                         <span><hr></span>
@@ -62,7 +62,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel grey">
+                <div class="panel grey" id="grey">
                     <div class="section-header">
                         <h1>MEET OUR BEAUTIFUL TEAM</h1>
                         <span><hr></span>
@@ -132,7 +132,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel white">
+                <div class="panel white" id="white">
                     <div class="section-header">
                         <h1>WE GOT SKILLS!</h1>
                         <span><hr></span>
@@ -162,7 +162,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel tan">
+                <div class="panel tan" id="tan">
                     <div class="section-header">
                         <h1>OUR PORTFOLIO</h1>
                         <span><hr></span>
@@ -194,7 +194,7 @@
                 </div>
             </section>
             <section>
-                <div class="panel pink">
+                <div class="panel pink" id="pink">
                     <div class="section-header">
                         <h1>WHAT PEOPLE SAY ABOUT US</h1>
                         <span><hr></span>
@@ -205,6 +205,8 @@
                     </div>
                 </div>
             </section>
-        </div>     
+        </div> 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     </body>
 </html>

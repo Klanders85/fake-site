@@ -49,7 +49,10 @@ html {
    nav{
       display: inline-block;
       float: right;
-   }
+      position: fixed;
+      z-index: 2;
+
+    }
    ul{
     list-style-type: none;
     padding: 0;
@@ -76,7 +79,7 @@ html {
     top: 60px;
   }
 }
-.navigation{
+.nav{
   margin:{
     right: 200px;
     top: 60px;
@@ -86,6 +89,10 @@ html {
     display: inline-block;
     padding-left: 60px;
   }
+}
+.nav-item.active > a{
+  background-color: red;
+                          
 }
 .section-header{
   @include section-header;
