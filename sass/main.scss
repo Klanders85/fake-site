@@ -48,10 +48,7 @@ html {
    ========================================================================== */
    nav{
       display: inline-block;
-      float: right;
-      position: fixed;
-      z-index: 2;
-
+      
     }
    ul{
     list-style-type: none;
@@ -183,6 +180,19 @@ html {
   }
 }
 
+.blue{
+  height: 825px;
+  background-color: #3c5499;
+  color: $white;
+  h1{
+     text-align: center;
+     color: $white;
+     margin:{
+      top:0;
+    }
+  }
+}
+
 .content-wrapper{
   width: 1110px;
   margin: 200px auto 0;
@@ -244,7 +254,7 @@ html {
   border: 15px solid #d74680; 
 }
 .graphic-design{
- border: 15px solid #15c7a8;  
+  border: 15px solid #15c7a8;  
 }
 .ui{
   border: 15px solid #eb7d4b;
@@ -275,3 +285,58 @@ html {
     padding-bottom: 30px;
   }
 }
+
+.testimonial-wrapper{
+  text-align: left;
+  display: inline-block;
+  margin: 40px 75px;
+  img{
+    vertical-align: top;
+    padding-right: 50px;
+  }
+  h2{
+    margin-bottom: 0;
+  }
+  p{
+    color: #ffdd99;
+    margin-top: 0;
+  }
+  .quote{
+    display: inline-block;
+  } 
+}
+
+.nameEmail{
+  width: 415px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: #273a71;
+  border: none;
+  margin: 0 30px;
+  text-align: center;
+}
+
+.message{
+  width: 890px;
+  height: 155px;
+  border-radius: 5px;
+  background-color: #273a71;
+  border: none;
+  margin: 30px 30px;
+  text-align: center;
+}
+
+.footer-wrapper{
+  background-color: #344b8e;
+  text-align: center;
+  color: $white;
+  ul{
+    margin-top: 0;
+  }
+  li{
+    padding: 40px;
+  }
+}
+
+
+
