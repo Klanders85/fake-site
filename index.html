@@ -14,6 +14,7 @@
     </head>
     <body data-spy="scroll" data-target="nav">
         <div class="container">
+            <div class="background"></div>
             <section>
                 <div class="panel purple navbar" id="purple">
                     <a href="#home"><img src="img/logo.png" class="logo"></a>
@@ -278,10 +279,15 @@
             </section>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/animate.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script> 
         <script type="text/javascript">
         $(document).ready(function(){
+
+            //Bootstrap scrollSpy
             $('body').scrollspy({ target: '.navbar' })
+
+           $(window).scrollTop
         });
         </script>
     </body>
