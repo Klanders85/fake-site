@@ -283,20 +283,17 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script> 
         <script type="text/javascript">
         $(document).ready(function(){
-            $('#white').hide();
             //Bootstrap scrollSpy
             $('body').scrollspy({ target: '.navbar' })
 
-            //enterSkills stores how many pixels from the top of the document the window is.
-            var enterSkills = $(window).scrollTop();
-            function animateSkills(){
-                if(enterSkills >= 2081){
-                    $('#grey').show('slow')
-                }
-            };
+            var scrolled = $(window).scrollTop();
 
-            //throwing an error and I dont know the fuck why?
-            $('window').onScroll(){}
+            $(window).scroll(function(){
+                console.log($(window).scrollTop()+"px")
+                if($(window).scrollTop() >= 2160){
+                    
+                }
+            });
         });
         </script>
     </body>
