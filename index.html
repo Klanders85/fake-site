@@ -11,6 +11,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/vendor/animate.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body data-spy="scroll" data-target="nav">
         <div class="container">
@@ -277,27 +281,6 @@
                     </div>
                 </footer>
             </section>
-        </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/animate.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
-        <script type="text/javascript">
-        $(document).ready(function(){
-            //Bootstrap scrollSpy
-            $('body').scrollspy({ target: '.navbar' })
-            //stores the number of pixels has been srolled from the top of the document
-            var scrolled = $(window).scrollTop();
-
-            //scroll function logs the scrolled value with px added
-            $(window).scroll(function(){
-                console.log($(window).scrollTop()+"px")
-                //if the scrolled value is greater than or equal to 2160 do something....
-                //add the animation/canvas class I think is what will need to be added
-                if($(window).scrollTop() >= 2160){
-                    $('.content-block').appClass()
-                }
-            });
-        });
-        </script>
+        </div> 
     </body>
 </html>
