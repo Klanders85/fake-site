@@ -149,7 +149,8 @@
                     </div>
                     <div class="content-wrapper">
                         <div class="content-block">
-                            <div class="skill-set web-design"><span>90%</span></div>
+                            <!-- <div ><span>90%</span></div> -->
+                            <canvas id="web-design" width="200" height="200">90%</canvas>
                             <h2>WEB DESIGN</h2>
                         </div>
 
@@ -282,5 +283,19 @@
                 </footer>
             </section>
         </div> 
+        <script type="text/javascript">
+            var canvas = document.getElementById('web-design'),
+                c = canvas.getContext('2d')
+                c.font = "3.125em Helvetica";
+                c.fillStyle = "#3c4761";
+            c.beginPath();
+            //x,y,rad,start ang, end ang c-wise = false/ counter-wise = true
+            c.arc(100,100,85,10,4.65,true)
+            c.lineWidth = 15;
+            c.strokeStyle = '#30bae7';
+            c.stroke();
+            c.fillText('90%',60, 115)
+
+        </script>
     </body>
 </html>
